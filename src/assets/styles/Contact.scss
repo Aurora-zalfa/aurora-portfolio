@@ -1,0 +1,83 @@
+.contact_wrapper svg {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-form {
+  padding-top: 20px;
+
+  button {
+    float: right;
+    background-color: white;
+    color: #050f0b;
+  }
+
+  button:hover {
+    background-color: #5000ca;
+    color: white;
+  }
+
+  // Latar putih dipindah dari fieldset ke root input.
+  // Sebelumnya fieldset putih menutupi teks yang diketik.
+  .MuiOutlinedInput-root {
+    background-color: white;
+    border-radius: 4px;
+
+    input,
+    textarea {
+      color: #12072b;
+      -webkit-text-fill-color: #12072b;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #777;
+      opacity: 1;
+    }
+  }
+
+  fieldset {
+    background-color: transparent;
+  }
+
+  .MuiInputLabel-root {
+    color: #555;
+  }
+
+  // Label yang naik ke garis atas diberi latar putih agar tidak terpotong
+  .MuiInputLabel-root.MuiInputLabel-shrink {
+    background-color: white;
+    padding: 0 6px;
+    border-radius: 4px;
+    color: #5000ca;
+  }
+
+  .MuiFormHelperText-root {
+    margin-left: 4px;
+  }
+}
+
+label {
+  font-size: 1.2rem;
+  font-family: 'DomaineDispNar-Medium', sans-serif;
+}
+
+.form-flex {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.form-flex .MuiFormControl-root {
+  width: 100%;
+}
+
+form {
+  width: 100% !important;
+}
+
+.body-form {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
